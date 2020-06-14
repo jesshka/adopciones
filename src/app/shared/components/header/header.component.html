@@ -1,0 +1,28 @@
+<div id='header'>
+  <div class='logo'>
+    <img class='logo image' src='../../../../assets/images/icon.png' alt=''>
+    <span class='logo text'>Adopta un angel</span>
+  </div>
+  <div class='buttons-container'>
+    <a href='/'>
+      <div class='button' [class.selected-button]='this.currentView === "inicio"'>
+        <span>Inicio</span>
+      </div>
+    </a>
+    <a href='/razas'>
+      <div class='button' [class.selected-button]='this.currentView === "razas"'>
+        <span>Razas</span>
+      </div>
+    </a>
+    <a href='/adopciones'>
+      <div class='button' [class.selected-button]='this.currentView === "adopciones"'>
+        <span>Adopciones</span>
+      </div>
+    </a>
+    <a href='/contactanos'>
+      <div class='button' [class.selected-button]='this.currentView === "contactanos"'>
+        <span>Contacto</span>
+      </div>
+    </a>
+  </div>
+</div>

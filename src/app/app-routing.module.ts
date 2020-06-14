@@ -18,19 +18,6 @@ const routes: Routes = [
     component: MainLayoutComponent,
     children: [
       {
-        path: '',
-        children: [
-          {
-            path: '',
-            component: HomeComponent,
-          },
-          {
-            path: '**',
-            redirectTo: '/404',
-          },
-        ],
-      },
-      {
         path: '404',
         component: Page404Component,
       },
@@ -67,7 +54,20 @@ const routes: Routes = [
       {
         path: 'contactanos',
         component: ContactUsComponent,
-      }
+      },
+      {
+        path: '',
+        children: [
+          {
+            path: '',
+            component: HomeComponent,
+          },
+          {
+            path: '**',
+            redirectTo: '/404',
+          },
+        ],
+      },
     ]
   },
 ];

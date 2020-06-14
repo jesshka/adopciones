@@ -12,6 +12,7 @@ import { AdoptionDetailComponent } from './main-views/adoptions/adoption-detail/
 import { BreedDetailComponent } from './main-views/breed-list/breed-detail/breed-detail.component';
 import { AdoptionFormComponent } from './main-views/adoptions/adoption-form/adoption-form.component';
 import { Page404Component } from './main-views/page404/page404.component';
+import { HeaderComponent } from './shared/components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { Page404Component } from './main-views/page404/page404.component';
     AdoptionDetailComponent,
     BreedDetailComponent,
     AdoptionFormComponent,
-    Page404Component
+    Page404Component,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
